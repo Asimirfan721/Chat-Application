@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/messages', [MessageController::class, 'sendMessage']);
     Route::get('/messages', [MessageController::class, 'getAllMessages']);
-    Route::get('/messages/{user_id}', [MessageController::class, 'getUserMessages']);
+    Route::get('/messages/{user_id}', [MessageController::class, 'getUserMessages']); //complete route
 });
 
 Route::post('/register', [AuthController::class, 'register']);
