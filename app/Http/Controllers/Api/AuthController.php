@@ -6,7 +6,7 @@ use App\Models\User;  // user model
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth; // authentication added
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\ValidationException;
+use Illuminate\Validation\ValidationException; // validation added
 
 class AuthController extends Controller
 {
